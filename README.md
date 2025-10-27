@@ -1,29 +1,36 @@
-Bus Ticket Reservation System
+# Bus Ticket Reservation System
 
 A user-friendly web application to search, book, and manage bus tickets efficiently, built with .NET 9 Web API, Angular 17, and PostgreSQL.
 
-🖥️ Features
+## 🖥️ Features
+- ✅ User registration and login with JWT authentication  
+- 🚌 Search buses by route and date  
+- 🪑 View seat plans and book seats (login required)  
+- 🔍 Filter and view bus details  
+- 📝 Minimal admin management for buses and schedules  
 
-✅ User registration and login with JWT authentication
+## ⚙️ Tech Stack
+- **Backend:** .NET 9 Web API with Entity Framework Core
+- **Architecture:** Clean Architecture + Domain-Driven Design (DDD)   
+- **Database:** PostgreSQL  
+- **Frontend:** Angular 17 with Bootstrap 5
 
-🚌 Search buses by route and date
+## 🚀 How to Run (Ubuntu)
+1. Backend
 
-🪑 View seat plans and book seats (login required)
+   - Ensure PostgreSQL is running and update connection string in
+     Backend/src/WebApi/appsettings.json if needed.
+   - From repo Backend folder: dotnet restore dotnet build dotnet run --project
+     src/WebApi/WebApi.csproj
 
-🔍 Filter and view bus details
+2. Frontend
+   - From Frontend/ClientApp: npm install npm start
 
-📝 Minimal admin management for buses and schedules
+## 📝 Author
+- **Name:** Raju Ahmad  
+- **Email:** razuahmed1066@gmail.com 
 
-⚙️ Tech Stack
 
-Backend: .NET 9 Web API with Entity Framework Core
 
-Database: PostgreSQL
 
-Frontend: Angular 17 with Bootstrap 5
 
-📝 Author
-
-Name: Raju Ahmad
-
-Email: razuahmed1066@gmail.com
